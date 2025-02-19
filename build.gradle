@@ -44,17 +44,14 @@ graalvmNative {
 		main {
 			buildArgs.add('--initialize-at-run-time=org.mybatis.spring.mapper.ClassPathMapperScanner')
 			buildArgs.add('--initialize-at-run-time=org.apache.ibatis.logging.LogFactory')
-
-
 			buildArgs.add('--initialize-at-run-time=org.mybatis.spring.mapper.MapperScannerConfigurer')
-
-			// Use project directory variable correctly
+			buildArgs.add('--initialize-at-run-time=org.apache.ibatis.session.SqlSessionFactory')
+			buildArgs.add('--initialize-at-run-time=org.apache.ibatis.session.Configuration')
+			buildArgs.add('--initialize-at-run-time=org.apache.ibatis.binding.MapperProxy')
+			buildArgs.add('--initialize-at-run-time=org.apache.ibatis.binding.MapperProxyFactory')
 			buildArgs.add("-H:DynamicProxyConfigurationFiles=${projectDir.absolutePath}/src/main/resources/META-INF/native-image/proxy-config.json")
-
 			buildArgs.add("-H:ResourceConfigurationFiles=${projectDir.absolutePath}/src/main/resources/META-INF/native-image/resource-config.json")
-
 			buildArgs.add("-H:ReflectionConfigurationFiles=${projectDir.absolutePath}/src/main/resources/META-INF/native-image/reflection-config.json")
-
 		}
 	}
 }

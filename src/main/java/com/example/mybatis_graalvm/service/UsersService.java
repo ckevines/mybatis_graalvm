@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-// UserService.java
 @Service
-public class UserService {
+public class UsersService {
     private final UserMapper userMapper;
 
-    public UserService(UserMapper userMapper) {
+    public UsersService(UserMapper userMapper) {
         this.userMapper = userMapper;
     }
+
 
     public List<User> getAllUsers() {
         return userMapper.findAll();

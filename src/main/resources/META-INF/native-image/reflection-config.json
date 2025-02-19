@@ -1,20 +1,31 @@
 [
   {
+    "name": "com.example.mybatis_graalvm.mapper.UserMapper",
+    "allDeclaredMethods": true
+  },
+  {
+    "name": "com.example.mybatis_graalvm.entity.User",
+    "allDeclaredConstructors": true,
+    "allPublicConstructors": true,
+    "allDeclaredMethods": true,
+    "allPublicMethods": true
+  },
+  {
+    "name": "org.apache.ibatis.session.SqlSessionFactory",
+    "allDeclaredConstructors": true,
+    "allPublicConstructors": true,
+    "allDeclaredMethods": true,
+    "allPublicMethods": true
+  },
+  {
+    "name": "org.apache.ibatis.session.Configuration",
+    "allDeclaredConstructors": true,
+    "allPublicConstructors": true,
+    "allDeclaredMethods": true,
+    "allPublicMethods": true
+  },
+  {
     "name": "org.apache.ibatis.logging.LogFactory",
-    "allDeclaredConstructors": true,
-    "allPublicConstructors": true,
-    "allDeclaredMethods": true,
-    "allPublicMethods": true
-  },
-  {
-    "name": "org.mybatis.spring.mapper.ClassPathMapperScanner",
-    "allDeclaredConstructors": true,
-    "allPublicConstructors": true,
-    "allDeclaredMethods": true,
-    "allPublicMethods": true
-  },
-  {
-    "name": "org.slf4j.LoggerFactory",
     "allDeclaredConstructors": true,
     "allPublicConstructors": true,
     "allDeclaredMethods": true,
@@ -28,7 +39,7 @@
     "allPublicMethods": true
   },
   {
-    "name": "org.apache.ibatis.binding.MapperProxy",
+    "name": "org.mybatis.spring.mapper.ClassPathMapperScanner",
     "allDeclaredConstructors": true,
     "allPublicConstructors": true,
     "allDeclaredMethods": true,
@@ -42,14 +53,7 @@
     "allPublicMethods": true
   },
   {
-    "name": "com.example.mybatis_graalvm.mapper.UserMapper",
-    "allDeclaredConstructors": true,
-    "allPublicConstructors": true,
-    "allDeclaredMethods": true,
-    "allPublicMethods": true
-  },
-  {
-    "name": "com.example.mybatis_graalvm.entity.User",
+    "name": "org.apache.ibatis.binding.MapperProxy",
     "allDeclaredConstructors": true,
     "allPublicConstructors": true,
     "allDeclaredMethods": true,
