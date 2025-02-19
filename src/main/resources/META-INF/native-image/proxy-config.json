@@ -1,4 +1,7 @@
 [
-  ["java.lang.reflect.Proxy"],
-  ["org.apache.ibatis.binding.MapperProxy"]
+  {
+    "interfaces": [
+      "com.example.mybatis_graalvm.mapper.UserMapper"
+    ]
+  }
 ]
