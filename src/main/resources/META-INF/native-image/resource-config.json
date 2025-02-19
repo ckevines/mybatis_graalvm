@@ -3,6 +3,8 @@
     "includes": [
       {"pattern": ".*Mapper\\.xml$"},
       {"pattern": ".*Mapper\\.class$"},
+      {"pattern": "org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd"},
+      {"pattern": "org/apache/ibatis/builder/xml/mybatis-3-config.dtd"},
       {"pattern": "logback.xml"},
       {"pattern": "org/slf4j/impl/StaticLoggerBinder.class"}
     ]
