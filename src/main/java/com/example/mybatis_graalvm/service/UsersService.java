@@ -1,21 +1,21 @@
 package com.example.mybatis_graalvm.service;
 
 import com.example.mybatis_graalvm.entity.User;
-import com.example.mybatis_graalvm.mapper.UserMapper;
+import com.example.mybatis_graalvm.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class UsersService {
-    private final UserMapper userMapper;
-
-    public UsersService(UserMapper userMapper) {
-        this.userMapper = userMapper;
-    }
-
+    private final UserRepository userRepository;
 
     public List<User> getAllUsers() {
-        return userMapper.findAll();
+        return userRepository.findAll().stream()
+                .map(modelUser -> new User(modelUser.getId(), modelUser.getName()))
+                .toList();
     }
 }
+

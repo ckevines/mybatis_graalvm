@@ -1,7 +1,0 @@
-[
-  {
-    "interfaces": [
-      "com.example.mybatis_graalvm.mapper.UserMapper"
-    ]
-  }
-]
